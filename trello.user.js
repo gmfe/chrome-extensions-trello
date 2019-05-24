@@ -14,15 +14,15 @@ function showMember () {
       listMap[item.id] = item.name
     })
 
-    const whoMap = {}
+    const whoCardMap = {}
     json.members.forEach(item => {
-      whoMap[item.id] = {
+      whoCardMap[item.id] = {
         name: item.initials,
         cards: [],
         idListName: ''
       }
     })
-    const list = json.cards.forEach((item) => {
+    json.cards.forEach((item) => {
       item.idMembers.forEach(v => {
         const listName = listMap[item.idList]
 
@@ -32,22 +32,51 @@ function showMember () {
           }
         }
 
-        whoMap[v].cards.push({
+        whoCardMap[v].cards.push({
           listName,
           name: item.name
         })
       })
     })
 
-    console.log(whoMap)
-
     const $board = document.getElementById('board')
     if (!$board) {
       return
     }
 
-    for (const key in whoMap) {
-      const item = whoMap[key]
+    if (kanban === '6AofN7n8' || kanban === 'j9BOQLmd') {
+      const sortArr = [
+        '5c3befb964fa77759cd4800a', // 何勇
+        '5c383a25cebb4e2d365cef17', // 易勇
+
+        '5c383e00c65db735936ad13e', // 夕明
+        '5c383af1ad492e4dc76d1707', // 伟强
+
+        '5c3b6c3490a10854cee9db3a', // 贵松
+        '5b3e3670b5d7c64ee69fe696', // 星姿
+        '5cb3f935ea5d1447df20f579', // 美梅
+
+        '5c38355dbfb46b278c24dca6', // 超明
+        '5c383a92812897267da2151b', // 志邦
+        '5c9b44b1e6a5b13f18c57ed8', // 桃春
+
+        '5c3809966e8a670e8588cd38', // 敏怡
+        '5c7c9f84a60b9374382f81d5', // 王彬
+        '5cb3f6e31bce057e4d8c0073', // 单坤
+
+        '5c3809f44d723c0cb5a916fb', // 雅堂
+      ].reverse()
+
+      json.members.sort((a, b) => {
+        const aIndex = sortArr.indexOf(a.id)
+        const bIndex = sortArr.indexOf(b.id)
+
+        return aIndex - bIndex
+      })
+    }
+
+    json.members.forEach(member => {
+      const item = whoCardMap[member.id]
 
       const div = document.createElement('div')
       div.className = 'js-list list-wrapper'
@@ -80,7 +109,7 @@ function showMember () {
       div.innerHTML = temp
 
       $board.insertBefore(div, $board.firstChild)
-    }
+    })
   })
 }
 
