@@ -156,8 +156,12 @@ function insertCSS (cssString) {
 }
 
 const cssStr = `
-.badge-text{
+.custom-field-front-badges .badge-text{
   white-space: normal;
+}
+
+.custom-field-front-badges .badge{
+  display: block;
 }
 `
 
