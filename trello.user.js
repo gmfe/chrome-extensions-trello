@@ -149,8 +149,22 @@ function showBtn (team) {
   $headerBtn.insertBefore(a, $headerBtn.firstChild)
 }
 
+function insertCSS (cssString) {
+  const style = window.document.createElement('style')
+  style.appendChild(document.createTextNode(cssString))
+  window.document.head.appendChild(style)
+}
+
+const cssStr = `
+.badge-text{
+  white-space: normal;
+}
+`
+
 setTimeout(() => {
   showBtn('前端')
   showBtn('后台')
   showBtn('产品')
+
+  insertCSS(cssStr)
 }, 2000)
