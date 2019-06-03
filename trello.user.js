@@ -30,6 +30,15 @@ const productMembers = [
   '552b61ccf021c0cd25fa5829' // 吴运林
 ].reverse()
 
+const testMembers = [
+  '5b45cdd16e89e20ab4f07334', // 王苗
+  '5b45c56046e17e8ed8e50d1f', // 李铭
+  '5bbdb9c50d8320630a66f01c', // 李婷
+  '5c3333987117ee14c6744bc5', // 杨金海
+  '5cee35780adb7172e44ea14a', // 李春艳
+  '5cee29746f79155d15a9e4da', // 刘静
+]
+
 function showMember (team) {
   if (!window.location.href.includes('trello.com')) {
     return
@@ -85,8 +94,10 @@ function showMember (team) {
         members = feMembers
       } else if (team === '产品') {
         members = productMembers
+      } else if (team === '测试') {
+        members = testMembers
       } else {
-        members = members.filter(m => !(feMembers.includes(m) || productMembers.includes(m)))
+        members = members.filter(m => !(feMembers.includes(m) || productMembers.includes(m) || testMembers.includes(m)))
       }
     }
 
@@ -140,9 +151,8 @@ function showBtn (team) {
   const a = document.createElement('a')
   a.className = 'board-header-btn'
   a.href = 'javascript:;'
-  a.style = {
-    padding: '0px'
-  }
+  a.style.padding = '0px'
+
   a.onclick = () => showMember(team)
   a.innerHTML = `<span class="board-header-btn-text u-text-underline">按${team}分</span>`
 
@@ -167,8 +177,9 @@ const cssStr = `
 
 setTimeout(() => {
   showBtn('前端')
-  showBtn('后台')
   showBtn('产品')
+  showBtn('测试')
+  showBtn('后台')
 
   insertCSS(cssStr)
 }, 2000)
