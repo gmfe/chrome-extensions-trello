@@ -1,6 +1,7 @@
 const feMembers = [
   '5c3befb964fa77759cd4800a', // 何勇
   '5c383a25cebb4e2d365cef17', // 易勇
+  '5cfe39736d1ce40c4689b13e', // 学裕
 
   '5c383e00c65db735936ad13e', // 夕明
   '5c383af1ad492e4dc76d1707', // 伟强
