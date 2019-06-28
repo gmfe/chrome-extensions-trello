@@ -28,7 +28,8 @@ const productMembers = [
   '5caea259a06229471ec336cd', // 薛帮顺
   '5caeaef3f176d809027a203c', // 远男
   '5cae9f30c163e114bf744fa4', // G
-  '552b61ccf021c0cd25fa5829' // 吴运林
+  '552b61ccf021c0cd25fa5829', // 吴运林
+  '5cee92f3e2d7e43ad241ffe4',// 朱俊俊
 ].reverse()
 
 const testMembers = [
@@ -41,16 +42,32 @@ const testMembers = [
 ]
 
 const be1Members = [
+  '5b46a91152ee524314ccda14', // 张泽
   "5cee0f5951796108d7d0ab8b", // 何能华
   "5bbde72db40ca85e7a8a51ee", // 刘文峰
+  '5c3314d1b6a30a43d816805c', // 陈耿伟
+  '5b6bb7007da2ec42fb400042', // 魏儒端
+  '5cee0308ef711551327ef5de', // 黄敏杰
 ]
 
 const be2Members = [
   "5bbde74588b8686ddd651b5d", // 夏天浩
+  "5b88a11b1a41cb570b868556", // 林诗奎
+  "5cee33231d34e35ab36fdc0c", // 温家锦
+  '5c330b7f9cf13e140cf61286', // 潘飞雷
+  '5ceeaba4dda8b489e67af02e', // 肖冬梅
+  '5cef3469c7b03c8ab3a8f49b', // 胡佩琳
+  '5bc5ac817631a963e79a85fb', // 赖晓荣
+  '5cee0302a50d2c88f4cc447b', // 钟智强
 ]
 
 const be3Members = [
   "5bbeb1f797b2635c8687ff2f", // 孟祥瑞
+  '5bab698c65cc993b562d0f9c', // 王玮
+  '5c330b359aa94f840ed244fe', // 谷龙
+  '50dd635cd531437c43000f95', // 钟其灵
+  '5cee02bacc1a64279f69490a', // 陈伟
+  '5bfb9378177a4f8afcc1d5ae', // 黄长新
 ]
 
 function showMember (team) {
