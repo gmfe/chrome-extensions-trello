@@ -40,6 +40,19 @@ const testMembers = [
   '5cee29746f79155d15a9e4da', // 刘静
 ]
 
+const be1Members = [
+  "5cee0f5951796108d7d0ab8b", // 何能华
+  "5bbde72db40ca85e7a8a51ee", // 刘文峰
+]
+
+const be2Members = [
+  "5bbde74588b8686ddd651b5d", // 夏天浩
+]
+
+const be3Members = [
+  "5bbeb1f797b2635c8687ff2f", // 孟祥瑞
+]
+
 function showMember (team) {
   if (!window.location.href.includes('trello.com')) {
     return
@@ -97,8 +110,21 @@ function showMember (team) {
         members = productMembers
       } else if (team === '测试') {
         members = testMembers
+      } else if (team === '后台一组') {
+        members = be1Members
+      } else if (team === '后台二组') {
+        members = be2Members
+      } else if (team === '后台三组') {
+        members = be3Members
       } else {
-        members = members.filter(m => !(feMembers.includes(m) || productMembers.includes(m) || testMembers.includes(m)))
+        members = members.filter(m => !(
+          feMembers.includes(m)
+          || productMembers.includes(m)
+          || testMembers.includes(m)
+          || be1Members.includes(m)
+          || be2Members.includes(m)
+          || be3Members.includes(m)
+        ))
       }
     }
 
@@ -180,7 +206,10 @@ setTimeout(() => {
   showBtn('前端')
   showBtn('产品')
   showBtn('测试')
-  showBtn('后台')
+  showBtn('后台一组')
+  showBtn('后台二组')
+  showBtn('后台三组')
+  showBtn('未分配')
 
   insertCSS(cssStr)
 }, 2000)
