@@ -1,0 +1,12 @@
+{
+  "name": "Trello_gm助手",
+  "description": "trello-分组",
+  "version": "1.0.1",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://trello.com/*"],
+      "js": ["trello.user.js"]
+    }
+  ]
+}
