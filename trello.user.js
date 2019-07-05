@@ -70,6 +70,13 @@ const be3Members = [
   '5bfb9378177a4f8afcc1d5ae', // 黄长新
 ]
 
+function hideMember () {
+  // 删除目前 DOM 中已存在的人员列表
+  [...document.getElementsByClassName('js-list-gm-ext')].forEach(
+    list => list.parentNode.removeChild(list)
+  )
+}
+
 function showMember (team) {
   if (!window.location.href.includes('trello.com')) {
     return
@@ -150,7 +157,7 @@ function showMember (team) {
 
       if (item) {
         const div = document.createElement('div')
-        div.className = 'js-list list-wrapper'
+        div.className = 'js-list list-wrapper js-list-gm-ext'
 
         let temp = `
 	<div class="list js-list-content">
@@ -197,7 +204,10 @@ function showBtn (team) {
   a.href = 'javascript:;'
   a.style.padding = '0px'
 
-  a.onclick = () => showMember(team)
+  a.onclick = () => { 
+    hideMember() 
+    showMember(team)
+  }
   a.innerHTML = `<span class="board-header-btn-text u-text-underline">按${team}分</span>`
 
   $headerBtn.insertBefore(a, $headerBtn.firstChild)
