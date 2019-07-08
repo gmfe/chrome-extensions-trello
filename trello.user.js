@@ -99,7 +99,7 @@ function showMember (team) {
         const listName = listMap[item.idList]
 
         if (kanban === '6AofN7n8') {
-          if (listName === '待整理排期') {
+          if (listName === '双月排期') {
             return
           }
         }
