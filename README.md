@@ -1,12 +1,13 @@
 # chrome-extensions-trello
-###mac
+
+### mac
 打开chrome 扩张程序 页面
 
 打开右上角 开发者模式
 
 然后把 trello.user.js 拖进去即可
 
-###Windows(mac也可以)
+### Windows(mac也可以)
 
 **1.下载项目"download.zip"(如图1)，然后解压文件**
 ![图1](./download.png '图1')
