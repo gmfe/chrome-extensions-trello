@@ -193,6 +193,13 @@ function showMember (team) {
 }
 
 function showBtn (team) {
+  addBtn(`按${team}分`, () => {
+    hideMember()
+    showMember(team)
+  })
+}
+
+function addBtn (text, onClick) {
   const $headerBtn = document.querySelector('.board-header-btns.mod-right')
 
   if (!$headerBtn) {
@@ -204,11 +211,8 @@ function showBtn (team) {
   a.href = 'javascript:;'
   a.style.padding = '0px'
 
-  a.onclick = () => { 
-    hideMember() 
-    showMember(team)
-  }
-  a.innerHTML = `<span class="board-header-btn-text u-text-underline">按${team}分</span>`
+  a.onclick = onClick
+  a.innerHTML = `<span class="board-header-btn-text u-text-underline">${text}</span>`
 
   $headerBtn.insertBefore(a, $headerBtn.firstChild)
 }
@@ -229,7 +233,38 @@ const cssStr = `
 }
 `
 
+function doSimple () {
+  const simpleCssStr = `
+.badges{
+  display: none;
+}
+.js-card-labels{
+  display: none;
+}
+
+`
+
+  insertCSS(simpleCssStr)
+}
+
+if (localStorage.getItem('showSimple') === 'true') {
+  doSimple()
+}
+
+function showSimple () {
+  addBtn('简洁', () => {
+    if (localStorage.getItem('showSimple') === 'true') {
+      localStorage.setItem('showSimple', '')
+      window.location.reload()
+    } else {
+      localStorage.setItem('showSimple', 'true')
+      doSimple()
+    }
+  })
+}
+
 setTimeout(() => {
+  showSimple()
   showBtn('前端')
   showBtn('产品')
   showBtn('测试')
