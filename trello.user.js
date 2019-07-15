@@ -29,7 +29,6 @@ const productMembers = [
   '5caeaef3f176d809027a203c', // 远男
   '5cae9f30c163e114bf744fa4', // G
   '552b61ccf021c0cd25fa5829', // 吴运林
-  '5cee92f3e2d7e43ad241ffe4', // 朱俊俊
 ].reverse()
 
 const testMembers = [
@@ -68,6 +67,7 @@ const be3Members = [
   '50dd635cd531437c43000f95', // 钟其灵
   '5cee02bacc1a64279f69490a', // 陈伟
   '5bfb9378177a4f8afcc1d5ae', // 黄长新
+  '5cee92f3e2d7e43ad241ffe4', // 朱俊俊
 ]
 
 function hideMember () {
