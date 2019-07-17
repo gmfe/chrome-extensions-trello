@@ -223,7 +223,14 @@ function addBtn (text, onClick) {
   a.href = 'javascript:;'
   a.style.padding = '0px'
 
-  a.onclick = onClick
+  const removeClassRegex = /(?:\s|^)board-header-btn-enabled(?:\s|$)/;
+  a.onclick = (event) => {
+    [...document.getElementsByClassName('board-header-btn-enabled')].forEach(
+      (ele) => ele.className=ele.className.replace(removeClassRegex,' ')
+    )
+    a.className += " board-header-btn-enabled"
+    onClick(event)
+  }
   a.innerHTML = `<span class="board-header-btn-text u-text-underline">${text}</span>`
 
   $headerBtn.insertBefore(a, $headerBtn.firstChild)
