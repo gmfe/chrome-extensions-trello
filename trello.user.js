@@ -183,7 +183,7 @@ function showMember (team) {
 			<a class="list-card js-member-droppable ui-droppable" href="javascript:;">
 				<div class="list-card-details js-card-details">
 					<span class="list-card-title js-card-name" dir="auto">
-					${card.listName}
+					  <span style="color: #5f9ea0;">${card.listName}</span>
 					<br>
 					${card.name}
 					</span>
