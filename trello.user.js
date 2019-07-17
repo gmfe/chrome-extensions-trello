@@ -22,13 +22,14 @@ const feMembers = [
 ].reverse()
 
 const productMembers = [
-  '5c99d46d5c9331835bddf78c', // S
   '5cae9f845654d9105e053156', // 谢磊
   '5c3809bc596b6044cd908fdf', // 刘敏
   '5caea259a06229471ec336cd', // 薛帮顺
   '5caeaef3f176d809027a203c', // 远男
   '5cae9f30c163e114bf744fa4', // G
   '552b61ccf021c0cd25fa5829', // 吴运林
+  "5cefb99994f12d22c8282b71", // marina
+  '5c99d46d5c9331835bddf78c', // seasonyuan
 ].reverse()
 
 const testMembers = [
