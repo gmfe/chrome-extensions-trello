@@ -104,7 +104,7 @@ function showMember (team) {
     const whoCardMap = {}
     json.members.forEach(item => {
       whoCardMap[item.id] = {
-        name: item.initials,
+        name: item.fullName,
         cards: [],
         idListName: ''
       }
