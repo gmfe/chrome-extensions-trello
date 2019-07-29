@@ -1,5 +1,4 @@
 const feMembers = [
-  '5c3befb964fa77759cd4800a', // 何勇
   '5c383a25cebb4e2d365cef17', // 易勇
   '5cfe39736d1ce40c4689b13e', // 学裕
 
@@ -7,7 +6,7 @@ const feMembers = [
   '5c383af1ad492e4dc76d1707', // 伟强
 
   '5c3b6c3490a10854cee9db3a', // 贵松
-  '5b3e3670b5d7c64ee69fe696', // 星姿
+  '5d351cbf03a9416e253a0e1c', // 思卿
   '5cb3f935ea5d1447df20f579', // 美梅
 
   '5c38355dbfb46b278c24dca6', // 超明
@@ -16,7 +15,6 @@ const feMembers = [
 
   '5c3809966e8a670e8588cd38', // 敏怡
   '5c7c9f84a60b9374382f81d5', // 王彬
-  '5cb3f6e31bce057e4d8c0073', // 单坤
 
   '5c3809f44d723c0cb5a916fb', // 雅堂
 ].reverse()
