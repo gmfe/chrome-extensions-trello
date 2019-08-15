@@ -293,4 +293,4 @@ setTimeout(() => {
   showBtn('后台一组')
 
   insertCSS(cssStr)
-}, 2000)
+}, 5000)
