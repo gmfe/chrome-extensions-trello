@@ -7,7 +7,6 @@ const feMembers = [
   '5d634c23dad2954191ff4efd', // 仁文
 
   '5c3b6c3490a10854cee9db3a', // 贵松
-  '5d351cbf03a9416e253a0e1c', // 思卿
   '5cb3f935ea5d1447df20f579', // 美梅
 
   '5c38355dbfb46b278c24dca6', // 超明
@@ -17,6 +16,7 @@ const feMembers = [
   '5c3809966e8a670e8588cd38', // 敏怡
   '5c7c9f84a60b9374382f81d5', // 王彬
   '5d351d3f7d5f8a3703aa66bf', // 京杭
+  '5caa9cda2a669386f5d1595e', // 俊泽
 
   '5c3809f44d723c0cb5a916fb', // 雅堂
 ].reverse()
@@ -27,7 +27,6 @@ const productMembers = [
   '5caea259a06229471ec336cd', // 薛帮顺
   '5caeaef3f176d809027a203c', // 远男
   '5cae9f30c163e114bf744fa4', // G
-  '552b61ccf021c0cd25fa5829', // 吴运林
   "5cefb99994f12d22c8282b71", // marina
   '5c99d46d5c9331835bddf78c', // seasonyuan
 ].reverse()
@@ -39,6 +38,7 @@ const testMembers = [
   '5c3333987117ee14c6744bc5', // 杨金海
   '5cee35780adb7172e44ea14a', // 李春艳
   '5cee29746f79155d15a9e4da', // 刘静
+  '5b45c6f034fa79b0a45ba513', // 周敏
 ]
 
 const be1Members = [
