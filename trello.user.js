@@ -1,13 +1,12 @@
 const feMembers = [
-  '5c383a25cebb4e2d365cef17', // 易勇
-  '5cfe39736d1ce40c4689b13e', // 学裕
-
   '5c383e00c65db735936ad13e', // 夕明
   '5c383af1ad492e4dc76d1707', // 伟强
   '5d634c23dad2954191ff4efd', // 仁文
+  '5cfe39736d1ce40c4689b13e', // 学裕
 
   '5c3b6c3490a10854cee9db3a', // 贵松
   '5cb3f935ea5d1447df20f579', // 美梅
+  '5dbbcfbc9ae5ab1ecd02c9b0', // 佳亮
 
   '5c38355dbfb46b278c24dca6', // 超明
   '5c9b44b1e6a5b13f18c57ed8', // 桃春
